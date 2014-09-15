@@ -1,4 +1,9 @@
-# [Headstart Boilerplate 1.1.0](http://headstart.io)
+# Vazquez.io
 
-This repo contains the default files used to scaffold your [Headstart project](http://headstart.io).
-Licensed under MIT.
+This is my website. It uses the following awesome technologies:
+
+- Headstart
+- Grunt
+- Bower
+- Sass 3
+- Handlebars
