@@ -15,7 +15,7 @@
 // Module imports -------------------------------------------------------------
 
 //@import 'module/container';
-//@import 'module/font';
+// @import 'module/font';
 //@import 'module/text';
 //@import 'module/reporting';
 //@import 'module/form';
@@ -29,7 +29,10 @@
 
 
 // YOUR STYLES HERE <---------
-
+p {
+  @include font-book();
+  font-size: 2rem;
+}
 
 // Print ----------------------------------------------------------------------
 //

@@ -33,3 +33,27 @@ $reporting-info-light: #DAE5F0;
 // http://www.jordanm.co.uk/tinytype
 
 $font-stack: 'Gotham XNarrow SSm A', 'Gotham XNarrow SSm B', Helvetica Neue, Helvetica, Verdana, Roboto, sans-serif;
+
+@mixin font-book() {
+  font-family: $font-stack;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin font-book-italic() {
+  font-family: $font-stack;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@mixin font-medium() {
+  font-family: $font-stack;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin font-bold() {
+  font-family: $font-stack;
+  font-weight: 700;
+  font-style: normal;
+}
