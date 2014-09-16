@@ -1,5 +1,5 @@
 {
-	"browser": "Google Chrome",
+	"browser": "Firefox",
 	"editor": "Sublime Text",
 	"minifyHTML": false,
 	"combineMediaQueries": false,
