@@ -34,11 +34,11 @@ h6 {
 p {
 	// Push down following content here
 	// @include rem(margin, 0, 0, 30);
-	
+
 	&:last-of-type:last-child {
 		margin-bottom: 0;
 	}
-	
+
 	// Optional: Push in headings for a better hand-held reading experience
 	// @include media-max($default-column-breakpoint) { padding-left: em(10); padding-right: em(10); }
 }
@@ -56,4 +56,11 @@ ul {
 	&:last-of-type:last-child {
 		margin-bottom: 0;
 	}
+}
+
+article {
+	font-family: 'Tungsten Narrow A', 'Tungsten Narrow B';
+	font-weight: 300;
+	font-style: normal;
+	font-size: 7rem;
 }
