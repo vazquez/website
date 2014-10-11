@@ -35,3 +35,66 @@ body {
 a,
 input,
 button { -ms-touch-action: none !important; }
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  background: #fffffd;
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    @include linear-gradient(red, orange);
+    top: 0;
+    bottom: 0px;
+    width: 8px;
+  }
+  &.landing {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @include linear-gradient(red, orange);
+    &:before, &:after {
+      position: relative;
+    }
+  }
+}
+
+nav {
+  position: relative;
+  top: -2.5em;
+  padding: 0 0 0 1em;
+  transition: top 1.3s ease-in, opacity 1.5s ease-in;
+  opacity: 0;
+  &.visible {
+    top: 0;
+    opacity: 1;
+  }
+  ul li {
+    display: inline-block;
+    padding: .8em 1em;
+    color: white;
+    a {
+      outline: none;
+      text-decoration: none;
+      font-size: 1.05em;
+      border-bottom: 1px dotted transparent;
+      transition: border-bottom 0.2s ease-in, color 0.2s ease-in;
+      &:hover {
+        border-bottom: 1px dotted white;
+      }
+      &.active {
+        border-bottom: 1px dotted white;
+      }
+      &.landing {
+        transition: border-bottom 0.2s ease-in, color 0.2s ease-in;
+      }
+      &:hover {
+        border-bottom: 1px dotted white;
+        color: white;
+      }
+    }
+  }
+}
