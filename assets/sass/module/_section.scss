@@ -1,9 +1,17 @@
 .hero-unit {
-  margin: 4em 0 0 1em;
+  // margin: 4em 0 0 1em;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   article {
     width: 100%;
     // font-size: 0px;
     color: white;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    &.visible {
+      opacity: 1;
+    }
     a {
       text-decoration: none;
       color: inherit;
